@@ -23,7 +23,7 @@ class ServicesTest {
     @Container
     public static PostgreSQLContainer<?> postgreSQLContainer = new PostgreSQLContainer<>("postgres")
             .withUsername("postgres")
-            .withPassword("0000")
+            .withPassword("postgres")
             .withInitScript("data.sql")
             .withReuse(true)
             .withDatabaseName(DATABASE_NAME);

@@ -1,10 +1,11 @@
 package dao;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public interface ConnectionPool {
 
-        Connection getConnection();
+        Connection getConnection() throws SQLException;
 
-        boolean releaseConnection(Connection connection);
+        void releaseConnection(Connection connection);
 }
